@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+nav{
+    outline: dashed yellow;
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 50px 45px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+  }
+.button:hover {
+    background-color: rgb(155, 7, 7);
+}
+
+
+header {
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   background-color: transparent;
+   justify-content: space-between;
+   outline: solid rgb(255, 0, 157);
+   max-height: 100px;
+}
+
+.home-logo {
+    margin-right: 20px;
+    outline: dashed green;
+}
+
+.home-logo img {
+    max-width: 100px;
+    outline: dashed rgb(19, 70, 19);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 550rem;
+    height: 750px;
+    outline: dashed 1px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 50, 182);
+}
+
+.inner-container {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+p {
+    text-align: center;
+}
+
+

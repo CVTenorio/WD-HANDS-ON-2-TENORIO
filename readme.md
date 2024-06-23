@@ -117,7 +117,7 @@ WD-ProjectName
 | Title | Purpose | Link |
 |-|-|-|
 | Box Shadow manipulation | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
-| 1 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
-| 3 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
+| Utilizing Media Queries | To have a responsive viewports | https://youtu.be/K24lUqcT0Ms?si=f64zSo7faYw_A6qE |
+| 3 | x | x |
 |4 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
 | 5 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |

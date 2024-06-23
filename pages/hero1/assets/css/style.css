@@ -92,7 +92,7 @@ section {
     font-size: 24px;
     margin: 25px;
     width: 100rem;
-    height: 650px;
+    height: 750px;
     outline: dashed 1px rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ section {
     background-color: rgb(223, 223, 223);
     gap: 50px;
     padding: 20px 20px;
-    box-shadow: rgba(32, 210, 91, 0.25) 0px 30px 60px -12px inset, rgba(15, 150, 29, 0.77) 0px 18px 36px -18px inset;
+    box-shadow: rgb(0, 0, 0) 0px 30px 60px -12px inset, rgb(241, 217, 2) 0px 18px 36px -18px inset;
 }
 
 .inner-container-left {
@@ -133,7 +133,7 @@ section {
     align-items: center;
     width: 55%;
     padding: 50px;
-    box-shadow: rgba(16, 53, 146, 0.597) 0px 54px 55px, rgba(0, 255, 170, 0.882) 0px -12px 30px, rgb(29, 255, 101) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(244, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.474) 0px 54px 55px, rgba(0, 255, 170, 0.882) 0px -12px 30px, rgb(29, 255, 101) 0px 4px 6px, rgb(15, 219, 8) 0px 12px 13px, rgba(5, 171, 216, 0.878) 0px -3px 5px;
 }
 
 .image-container-right, img {
@@ -151,5 +151,30 @@ section {
     outline: dashed black;
     background-color: transparent;
 }
+
+/*Manipulation of Viewports*/
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        height: 50vh;
+    }
+
+     .inner-container-right, .image-container-right  {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .container {
+        height: 650px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 1920px) {
+    .container {
+        width: 70%;
+    }
+}
+
 
 

@@ -66,6 +66,7 @@ header {
    outline: solid rgb(255, 0, 157);
    max-height: 100px;
    opacity: .8;
+   box-shadow: rgb(0, 245, 29) 0px 20px 30px -10px;
 }
 
 .home-logo {

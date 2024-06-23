@@ -115,18 +115,41 @@ section {
     outline: solid black;
 }
 
-.inner-container-right {
+.inner-container-right{
     width: 50%;
     height: 100%;
-    background-color: red;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    outline: solid black;
 }
 
+.image-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    padding: 50px;
+    box-shadow: rgba(16, 53, 146, 0.597) 0px 54px 55px, rgba(0, 255, 170, 0.882) 0px -12px 30px, rgb(29, 255, 101) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(244, 0, 0, 0.09) 0px -3px 5px;
+}
 
+.image-container-right, img {
+    max-width: 80%;
+    height: auto;
+    outline: solid rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 15px;
+}
+
+.image-container-right .hero-name {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    outline: dashed black;
+    background-color: transparent;
+}
 
 

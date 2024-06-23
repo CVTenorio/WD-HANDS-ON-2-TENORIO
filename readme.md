@@ -116,4 +116,8 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Box Shadow manipulation | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
+| 1 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
+| 3 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
+|4 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
+| 5 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |

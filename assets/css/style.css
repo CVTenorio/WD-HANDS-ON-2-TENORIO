@@ -1,7 +1,11 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-image: url('/assets/img/wallpaper_homepage.jpg');
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(50, 50, 50));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,24 +16,23 @@ body {
 }
 
 nav{
-    outline: dashed yellow;
     display: flex;
     gap: 15px;
 }
 
 .button {
     display: inline-block;
-    padding: 50px 45px;
+    padding: 30px 45px;
     margin: 5px;
     text-decoration: none;
-    background-color: rgba(8, 0, 68, 0.6);
-    color: rgb(0, 0, 0);
+    background-color: rgba(70, 65, 109, 0.6);
+    color: rgb(151, 0, 0);
     border-radius: 5px;
     text-align: center;
     font-weight: 1000;
     font-size: 17px;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgb(248, 0, 0);
     transition: all 250ms;
     overflow: hidden;
     position: relative;
@@ -43,10 +46,10 @@ nav{
     height: 100%;
     width: 0;
     border-radius: 15px;
-    background-color: #212121;
+    background-color: #000000;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
 }
 .button:hover {
@@ -61,21 +64,18 @@ header {
    display: flex;
    align-items: center;
    padding: 20px;
-   background-color: whitesmoke;
+   background-color: transparent;
    justify-content: space-between;
-   outline: solid rgb(255, 0, 157);
    max-height: 100px;
    opacity: .8;
 }
 
 .home-logo {
-    margin-right: 20px;
-    outline: dashed green;
+    margin-right: 30px;
 }
 
 .home-logo img {
     max-width: 100px;
-    outline: dashed rgb(19, 70, 19);
 }
 
 section {
@@ -90,41 +90,60 @@ section {
     font-family: arial;
     font-size: 24px;
     margin: 25px;
-    width: 100rem;
-    height: 650px;
-    outline: dashed 1px rgb(255, 255, 255);
+    width: 75rem;
+    height: 550px;
+    outline: solid 3px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    gap: 50px;
+    background-color: transparent;
+    gap: 3px;
     padding: 20px 20px;
+    flex-direction: column;
 }
 
-.inner-container-left {
-    width: 50%;
+.inner-container-top {
+    width: 80%;
     height: 50%;
-    background-color: red;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    outline: solid black;
+    font-size: 100px;
+    outline: solid red;
 }
 
-.inner-container-right {
-    width: 50%;
-    height: 100%;
-    background-color: red;
+.inner-container-bottom {
+    width: 80%;
+    max-width: 600px;
+    min-width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: auto;
+    max-height: 50vh;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    outline: solid black;
 }
 
+@media (max-width: 768px) {
+    .inner-container-bottom {
+        width: 90%;
+        padding: 8px;
+    }
+}
 
+@media (max-width: 480px) {
+    .inner-container-bottom {
+        width: 100%;
+        padding: 5px;
+    }
+}
 
 

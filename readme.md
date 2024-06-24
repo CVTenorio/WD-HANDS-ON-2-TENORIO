@@ -6,14 +6,14 @@
 <div align="center">
   <a href="https://github.com/CVTenorio/WD-HANDS-ON-2-TENORIO">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/generals_Logo.png" alt="Nyebe" width="130" height="100">
+    <img src="/assets/img/StarWars_Logo.png" alt="Star Warz" width="150" height="150">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">HELLO STUART!</h3>
+  <h3 align="center">!Card Designs!</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Making a Hero and Card Display Designs 
+  Making a Hero and Card Display Designs. It will showcase different characters in the Star Wars Universe.
 </div>
 
 <br />
@@ -57,7 +57,7 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Will make Static and Responsive designs for Cards
+Each page it will have different hero styles and card designs. Each hero page will have a unique character from the star wars universe.
 
 Guiding Question:
 - What is the project

@@ -13,7 +13,6 @@ body {
 
 .title-left { /*for left inner_container */
     font-size: 85px;
-    outline: dashed rgb(0, 0, 0);
 }
 
 nav{
@@ -119,6 +118,7 @@ section {
     display: flex;
     flex-direction: column;
     outline: solid black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .inner-container-right{

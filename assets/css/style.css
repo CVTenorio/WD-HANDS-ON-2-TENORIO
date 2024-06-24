@@ -92,7 +92,6 @@ section {
     margin: 25px;
     width: 75rem;
     height: 550px;
-    outline: solid 3px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +111,6 @@ section {
     display: flex;
     flex-direction: column;
     font-size: 100px;
-    outline: solid red;
 }
 
 .inner-container-bottom {

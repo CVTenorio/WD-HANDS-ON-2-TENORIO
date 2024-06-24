@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('/assets/img/wallpaper_homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-left { /*for left inner_container */
+    font-size: 85px;
+}
+
+nav{
+    outline: dashed yellow;
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 50px 45px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: rgba(8, 0, 68, 0.6);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    position: relative;
+  }
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+}
+.button:hover {
+    color: #e8e8e8;
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   background-color: whitesmoke;
+   justify-content: space-between;
+   outline: solid rgb(255, 0, 157);
+   max-height: 100px;
+   opacity: .8;
+   box-shadow: rgb(0, 245, 29) 0px 20px 30px -10px;
+}
+
+.home-logo {
+    margin-right: 20px;
+    outline: dashed green;
+}
+
+.home-logo img {
+    max-width: 100px;
+    outline: dashed rgb(19, 70, 19);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 50px;
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 100rem;
+    height: 750px;
+    outline: solid 5px rgba(255, 255, 255, 0.904);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+    gap: 50px;
+    padding: 20px 20px;
+    box-shadow: rgb(0, 0, 0) 0px 30px 60px -12px inset, rgb(241, 217, 2) 0px 18px 36px -18px inset;
+}
+
+.inner-container-left {
+    width: 50%;
+    height: 70%;
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    outline: solid black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.inner-container-right{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.474) 0px 54px 55px, rgba(0, 255, 170, 0.882) 0px -12px 30px, rgb(29, 255, 101) 0px 4px 6px, rgb(15, 219, 8) 0px 12px 13px, rgba(5, 171, 216, 0.878) 0px -3px 5px;
+}
+
+.image-container-right, img {
+    max-width: 80%;
+    height: auto;
+    outline: solid rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 15px;
+}
+
+.image-container-right .hero-name {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    outline: dashed black;
+    background-color: transparent;
+}
+
+/*Manipulation of Viewports*/
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        height: 50vh;
+    }
+
+     .inner-container-right, .image-container-right  {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .container {
+        height: 650px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 1920px) {
+    .container {
+        width: 70%;
+    }
+}
+
+
+

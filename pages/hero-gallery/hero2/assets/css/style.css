@@ -76,14 +76,28 @@ header {
 
 section {
     display: flex;
+    outline: solid black;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: row;
+    flex-direction: column-reverse;
     max-height: fit-content;
 }
 
-.container {
+.title-container {
+    display: flex;
+    font-size: 55px;
+    font-weight: 1000;
+    margin-top: 75px;
+    margin-bottom: -15px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container {
     border-radius: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
@@ -122,7 +136,6 @@ p{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    outline: solid red;
     position: relative;
     box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -159,6 +172,40 @@ p{
 .card:hover .vader-image {
     height:18em;
 }
+
+
+.anakin-image {
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/pages/hero-gallery/hero2/assets/img/anakinskywalker-card-profile2.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.anakin-description {
+    background-color: #ffffff;
+    height:12em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+}
+
+.card:hover .anakin-description {
+    height:0em;
+    padding:0px 1em;
+}
+
+.card:hover .anakin-image {
+    height:18em;
+}
+
 
 /*Manipulation of Viewports*/
 @media (min-width: 768px) {

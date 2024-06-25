@@ -1,34 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-image: url('/assets/img/wallpaper_homepage.jpg');
+    background-image: url('/pages/hero-gallery/hero2/assets/img/hero2-background2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    height: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 nav{
-    outline: dashed yellow;
     display: flex;
     gap: 15px;
 }
 
 .button {
     display: inline-block;
-    padding: 50px 45px;
+    padding: 25px 45px;
     margin: 5px;
     text-decoration: none;
-    background-color: rgba(8, 0, 68, 0.6);
-    color: rgb(0, 0, 0);
+    background-color: rgba(14, 24, 18, 0.888);
+    color: rgb(189, 222, 131);
     border-radius: 5px;
     text-align: center;
-    font-weight: 1000;
+    font-weight: 100px;
     font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
@@ -43,14 +45,14 @@ nav{
     height: 100%;
     width: 0;
     border-radius: 15px;
-    background-color: #212121;
+    background-color: #0d8bc6;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
 }
 .button:hover {
-    color: #e8e8e8;
+    color: #fff7f7;
 }
 
 .button:hover::before {
@@ -61,21 +63,15 @@ header {
    display: flex;
    align-items: center;
    padding: 20px;
-   background-color: whitesmoke;
+   background-color: transparent;
    justify-content: space-between;
-   outline: solid rgb(255, 0, 157);
    max-height: 100px;
-   opacity: .8;
-}
-
-.home-logo {
-    margin-right: 20px;
-    outline: dashed green;
 }
 
 .home-logo img {
+    margin-left: 20px;
     max-width: 100px;
-    outline: dashed rgb(19, 70, 19);
+    background-color: transparent;
 }
 
 section {
@@ -83,48 +79,110 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: row;
+    max-height: fit-content;
 }
 
 .container {
     border-radius: 50px;
-    font-family: arial;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
     margin: 25px;
-    width: 100rem;
-    height: 650px;
-    outline: dashed 1px rgb(255, 255, 255);
+    margin-top: 10px;
     display: flex;
+    height:100vh;
+    width:100%;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    gap: 50px;
-    padding: 20px 20px;
+    background-color: transparent;
+    gap: 5px;
+    padding: 10px 10px;
+    flex-direction: row-reverse;
 }
 
-.inner-container-left {
-    width: 50%;
-    height: 50%;
-    background-color: red;
+h5 {
+    margin: 0px;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+p{
+    font-size: 18px;
+}
+
+.card {
+    height:18em;
+    width:14em;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 18px;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    outline: solid black;
+    overflow: hidden;
+    outline: solid red;
+    position: relative;
+    box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.inner-container-right {
-    width: 50%;
-    height: 100%;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    outline: solid black;
+.vader-image {
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/pages/hero-gallery/hero2/assets/img/darthvader-card-profile.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
+.vader-description {
+    background-color: #FAFAFC;
+    height:12em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+}
+
+.card:hover .vader-description {
+    height:0em;
+    padding:0px 1em;
+}
+
+.card:hover .vader-image {
+    height:18em;
+}
+
+/*Manipulation of Viewports*/
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row-reverse;
+        height: 50vh;
+    }
+
+     .inner-container-right, .image-container-right  {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .container {
+        height: 650px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 1920px) {
+    .container {
+        width: 70%;
+    }
+}
 
 
 

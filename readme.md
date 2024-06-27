@@ -120,4 +120,4 @@ WD-ProjectName
 | Utilizing Media Queries | To have a responsive viewports | https://youtu.be/K24lUqcT0Ms?si=f64zSo7faYw_A6qE |
 | Using CSS Gradients | To design backgrounds or containers | https://cssgradient.io/blog/linear-gradient-css/ |
 | Utilizing the transition property | to have a hide card design |https://developer.mozilla.org/en-US/docs/Web/CSS/transition |
-| 5 | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow |
+| Utilizing cubic beszier function | I would like to have a card animation that if hovered it will have an effect that it will show the whole image within the container to highlight the actual card itself, this function will be seen on hero 2 page | https://css-tricks.com/advanced-css-animation-using-cubic-bezier/ https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function|

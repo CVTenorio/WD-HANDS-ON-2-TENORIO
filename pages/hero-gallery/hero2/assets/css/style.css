@@ -76,7 +76,6 @@ header {
 
 section {
     display: flex;
-    outline: solid black;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -137,12 +136,12 @@ p{
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    box-shadow:  15px 15px 27px #ffffff, -15px -15px 27px #ffffff;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .vader-image {
-    height:6em;
+    height: 300px;
     width:14em;
     padding:1em 2em;
     position:Absolute;
@@ -154,8 +153,8 @@ p{
 }
 
 .vader-description {
-    background-color: #FAFAFC;
-    height:12em;
+    background-color: #fcfafa;
+    height: 200px;
     width:14em;
     position:absolute;
     bottom:0em;
@@ -163,16 +162,6 @@ p{
     padding: 0.5em 1em;
     text-align:center;
 }
-
-.card:hover .vader-description {
-    height:0em;
-    padding:0px 1em;
-}
-
-.card:hover .vader-image {
-    height:18em;
-}
-
 
 .anakin-image {
     height:6em;

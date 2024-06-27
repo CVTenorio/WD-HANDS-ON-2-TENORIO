@@ -104,7 +104,7 @@ section {
 
 .inner-container-right {
     width: 50%;
-    height: 70%;
+    height: auto;
     margin-right: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 10%;

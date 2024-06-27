@@ -1,7 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-image: url('/assets/img/wallpaper_homepage.jpg');
+    background-image: url('/pages/hero-gallery/hero3/assets/img/sith-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,14 +16,13 @@ body {
 }
 
 nav{
-    outline: dashed yellow;
     display: flex;
     gap: 15px;
 }
 
 .button {
     display: inline-block;
-    padding: 50px 45px;
+    padding: 30px 45px;
     margin: 5px;
     text-decoration: none;
     background-color: rgba(8, 0, 68, 0.6);
@@ -28,7 +31,6 @@ nav{
     text-align: center;
     font-weight: 1000;
     font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
@@ -45,7 +47,6 @@ nav{
     border-radius: 15px;
     background-color: #212121;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
 }
@@ -61,21 +62,23 @@ header {
    display: flex;
    align-items: center;
    padding: 20px;
-   background-color: whitesmoke;
+   background-color:transparent;
    justify-content: space-between;
-   outline: solid rgb(255, 0, 157);
    max-height: 100px;
    opacity: .8;
 }
 
 .home-logo {
     margin-right: 20px;
-    outline: dashed green;
+    height: auto;
+    width: auto;
+    background-color: antiquewhite;
 }
 
 .home-logo img {
-    max-width: 100px;
-    outline: dashed rgb(19, 70, 19);
+    max-width: 300px;
+    height: 100px;
+    width: 200px;
 }
 
 section {
@@ -92,7 +95,6 @@ section {
     margin: 25px;
     width: 100rem;
     height: 650px;
-    outline: dashed 1px rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +112,6 @@ section {
     text-align: center;
     display: flex;
     flex-direction: column;
-    outline: solid black;
 }
 
 .inner-container-right {

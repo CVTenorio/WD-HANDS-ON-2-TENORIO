@@ -1,131 +1,207 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    background-image: url('/pages/hero-gallery/hero3/assets/img/sith-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-image: url("/pages/hero-gallery/hero3/assets/img/sith-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
-nav{
-    display: flex;
-    gap: 15px;
+nav {
+  display: flex;
+  height: auto;
+  width: auto;
+  gap: 15px;
 }
 
 .button {
-    display: inline-block;
-    padding: 30px 45px;
-    margin: 5px;
-    text-decoration: none;
-    background-color: rgba(8, 0, 68, 0.6);
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    text-align: center;
-    font-weight: 1000;
-    font-size: 17px;
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms;
-    overflow: hidden;
-    position: relative;
-  }
+  display: inline-block;
+  padding: 30px 45px;
+  margin: 5px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 17px;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  position: relative;
+}
 
 .button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: #212121;
-    z-index: -1;
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
 }
+
 .button:hover {
-    color: #e8e8e8;
+  color: #ffffff;
 }
 
 .button:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 header {
-   display: flex;
-   align-items: center;
-   padding: 20px;
-   background-color:transparent;
-   justify-content: space-between;
-   max-height: 100px;
-   opacity: .8;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  justify-content: space-between;
+  max-height: 100px;
+  opacity: 0.8;
 }
 
 .home-logo {
-    margin-right: 20px;
-    height: auto;
-    width: auto;
-    background-color: antiquewhite;
+  margin-right: 20px;
+  height: auto;
+  width: auto;
 }
 
 .home-logo img {
-    max-width: 300px;
-    height: 100px;
-    width: 200px;
+  max-width: 300px;
+  height: 100px;
+  width: 100px;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes sith-border-animation {
+  0% {
+    border-image-source: conic-gradient(rgb(166, 2, 2) 360deg, transparent 360deg);
+  }
+  25% {
+    border-image-source: conic-gradient(rgb(140, 2, 2) 360deg, transparent 360deg);
+  }
+  50% {
+    border-image-source: conic-gradient(rgb(96, 1, 1) 360deg, transparent 360deg);
+  }
+  75% {
+    border-image-source: conic-gradient(rgb(108, 1, 1) 360deg, transparent 360deg);
+  }
+  100% {
+    border-image-source: conic-gradient(rgb(71, 1, 1) 360deg, transparent 360deg);
+  }
 }
 
 .container {
-    border-radius: 50px;
-    font-family: arial;
-    font-size: 24px;
-    margin: 25px;
-    width: 100rem;
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    gap: 50px;
-    padding: 20px 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-image-slice: 1;
+  flex-direction: row;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin: 25px;
+  width: 75rem;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  gap: 80px;
+  padding: 20px 20px;
+  animation: sith-border-animation 5s infinite linear;
+  perspective: 800px;
+  position: relative;
 }
 
 .inner-container-left {
-    width: 50%;
-    height: 50%;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  width: 243px;
+  height: 300px;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.inner-container-left:hover {
+  transform: rotateY(0.5turn);
+}
+
+.countdooku-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+
+.countdooku-card img {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.countdooku-card--back {
+  transform: rotateY(0.5turn);
 }
 
 .inner-container-right {
-    width: 50%;
-    height: 100%;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    outline: solid black;
+  margin-right: 25px;
+  margin-left: 25px;
+  width: 55%;
+  height: 100%;
+  background-color: transparent;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-style: double;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #ffffff;
+  color: white;
+  padding: 25px 25px;
 }
 
+.name {
+  padding: 10px;
+  width: 85%;
+  height: 40%;
+  background-color: transparent;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
-
-
+.countdooku-info {
+  width: 75%;
+  height: 50%;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}

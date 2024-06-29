@@ -6,14 +6,14 @@
 <div align="center">
   <a href="https://github.com/CVTenorio/WD-HANDS-ON-2-TENORIO">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="/assets/img/StarWars_Logo.png" alt="Star Warz" width="150" height="150">
+    <img src="/assets/img/STAR WEARS.png" alt="Star Warz" width="200" height="180">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">!Card Designs!</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Making a Hero and Card Display Designs. It will showcase different characters in the Star Wars Universe.
+  Making a Hero and Card Display Designs. It will showcase different characters from Star Wars Universe.
 </div>
 
 <br />
@@ -57,7 +57,7 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Each page it will have different hero styles and card designs. Each hero page will have a unique character from the star wars universe.
+Each page will have different & unique hero styles and card designs it includes one static and animated.
 
 Guiding Question:
 - What is the project
@@ -68,9 +68,13 @@ Guiding Question:
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Multipage Website
+- Utilizing Transition Timing function for (borders and card)
+- Utilize function Cubic Bezier & Conic-Gradient (borders)
+- Hover (Grow Effect)
+- Multi-layered box shadow
+- Reflection effect on hero 3 page (card)
+- tbc..
 
 ### Technology
 <!-- TODO: List of Technology Used -->

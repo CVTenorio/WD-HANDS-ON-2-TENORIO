@@ -74,7 +74,6 @@ Guiding Question:
 - Hover (Grow Effect)
 - Multi-layered box shadow
 - Reflection effect on hero 3 page (card)
-- tbc..
 
 ### Technology
 <!-- TODO: List of Technology Used -->

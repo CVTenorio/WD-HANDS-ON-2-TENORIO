@@ -87,18 +87,20 @@ section {
 }
 
 .container {
-    border-radius: 50px;
+    border-radius: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
-    margin: 25px;
-    width: 50rem;
-    height: 750px;
+    font-size: 20px;
+    margin: 10px;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    max-height: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background-color: transparent;
-    gap: 5px;
-    padding: 10px 10px;
+    gap: 3px;
+    padding: 15px 20px;
     flex-direction: row-reverse;
 }
 
@@ -177,30 +179,6 @@ section {
     font-size: 20px;
     color: black;
     background-color: transparent;
-}
-
-/*Manipulation of Viewports*/
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row-reverse;
-        height: 50vh;
-    }
-
-     .inner-container-right, .image-container-right  {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1080px) {
-    .container {
-        height: 650px;
-    }
-}
-
-@media (min-width: 1920px) and (max-width: 1920px) {
-    .container {
-        width: 70%;
-    }
 }
 
 

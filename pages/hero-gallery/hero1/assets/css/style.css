@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-.title-right { /*for left inner_container */
+.title-right {
     font-size: 85px;
 }
 

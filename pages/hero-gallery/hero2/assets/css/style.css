@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    justify-content: center;
     height: 50%;
     width: 100%;
     display: flex;
@@ -194,31 +195,5 @@ p{
 .card:hover .anakin-image {
     height:18em;
 }
-
-
-/*Manipulation of Viewports*/
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row-reverse;
-        height: 50vh;
-    }
-
-     .inner-container-right, .image-container-right  {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1080px) {
-    .container {
-        height: 650px;
-    }
-}
-
-@media (min-width: 1920px) and (max-width: 1920px) {
-    .container {
-        width: 70%;
-    }
-}
-
 
 

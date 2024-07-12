@@ -1,28 +1,25 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url('/assets/img/wallpaper_homepage.jpg');
+    background-image: url('/pages/hero-gallery/hero5/assets/img/hero5-wallpaper.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
 nav{
-    outline: dashed yellow;
     display: flex;
     gap: 15px;
 }
 
 .button {
     display: inline-block;
-    padding: 50px 45px;
+    padding: 25px 45px;
     margin: 5px;
     text-decoration: none;
-    background-color: rgba(8, 0, 68, 0.6);
+    background-color: rgba(7, 110, 158, 0.6);
     color: rgb(0, 0, 0);
     border-radius: 5px;
     text-align: center;
@@ -41,7 +38,7 @@ nav{
     left: 0;
     height: 100%;
     width: 0;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #212121;
     z-index: -1;
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
@@ -56,24 +53,24 @@ nav{
 }
 
 header {
+   margin: 25px;
    display: flex;
    align-items: center;
-   padding: 20px;
+   padding: 20px 25px;
    background-color: whitesmoke;
    justify-content: space-between;
-   outline: solid rgb(255, 0, 157);
    max-height: 100px;
    opacity: .8;
 }
 
 .home-logo {
     margin-right: 20px;
-    outline: dashed green;
 }
 
 .home-logo img {
-    max-width: 100px;
-    outline: dashed rgb(19, 70, 19);
+    max-width: 150px;
+    height: 100px;
+
 }
 
 section {
@@ -85,16 +82,13 @@ section {
 
 .container {
     border-radius: 50px;
-    font-family: arial;
-    font-size: 24px;
     margin: 25px;
     width: 100rem;
     height: 650px;
-    outline: dashed 1px rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     gap: 50px;
     padding: 20px 20px;
 }

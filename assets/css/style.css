@@ -29,7 +29,6 @@ nav{
     text-align: center;
     font-weight: 1000;
     font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgb(248, 0, 0);
     transition: all 250ms;
     overflow: hidden;
@@ -46,7 +45,6 @@ nav{
     border-radius: 15px;
     background-color: #000000;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
 }

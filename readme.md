@@ -119,9 +119,8 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Box Shadow manipulation | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow https://www.webfx.com/blog/web-design/css-box-shadow/|
-| Utilizing Media Queries | To have a responsive viewports | https://youtu.be/K24lUqcT0Ms?si=f64zSo7faYw_A6qE |
+| CSS Border/Box Shadow | To have neon light effects around and at the back of the container | https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow https://www.webfx.com/blog/web-design/css-box-shadow/ https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow|
 | Using CSS Gradients | To design backgrounds or containers | https://cssgradient.io/blog/linear-gradient-css/ |
 | Utilizing the transition property | to have a hide card design |https://developer.mozilla.org/en-US/docs/Web/CSS/transition |
-| Utilizing cubic beszier function | I would like to have a card animation that if hovered it will have an effect that it will show the whole image within the container to highlight the actual card itself, this function will be seen on hero 2 page | https://css-tricks.com/advanced-css-animation-using-cubic-bezier/ https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function|
-| Border animation | I would like to have a border animation for page 3 for the card container | https://developer.mozilla.org/en-US/docs/Web/CSS/animation|
+| Utilizing cubic bezier function | I would like to have a card animation that if hovered it will have an effect that it will show the whole image within the container to highlight the actual card itself, this function will be seen on hero 2 page | https://css-tricks.com/advanced-css-animation-using-cubic-bezier/ https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function|
+| Border animation | I would like to have a border animation for page 3 for the card container | https://developer.mozilla.org/en-US/docs/Web/CSS/animation https://dev.to/chokcoco/fantastic-css-border-animation-5166|

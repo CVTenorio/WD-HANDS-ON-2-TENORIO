@@ -124,11 +124,11 @@ p{
     font-size: 18px;
 }
 
-.card {
+.card-anakin {
+    font-family: Helevetica;
     height:18em;
     width:14em;
     margin-right: 50px;
-    background-color: rgb(255, 255, 255);
     border-radius: 18px;
     justify-content: center;
     align-items: center;
@@ -137,8 +137,24 @@ p{
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    box-shadow:  15px 15px 27px #ffffff, -15px -15px 27px #ffffff;
+    box-shadow:  15px 15px 27px #031081, -15px -15px 27px #05089e;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card-vader {
+    font-family: Helevetica;
+    height:18em;
+    width:14em;
+    margin-right: 50px;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow:  15px 15px 27px #af0505, -15px -15px 27px #b30808;
 }
 
 .vader-image {
@@ -154,7 +170,7 @@ p{
 }
 
 .vader-description {
-    background-color: #fcfafa;
+    background-color: #e91313;
     height: 200px;
     width:14em;
     position:absolute;
@@ -177,7 +193,7 @@ p{
 }
 
 .anakin-description {
-    background-color: #ffffff;
+    background-color: #1c0ed8;
     height:12em;
     width:14em;
     position:absolute;
@@ -187,12 +203,12 @@ p{
     text-align:center;
 }
 
-.card:hover .anakin-description {
+.card-anakin:hover .anakin-description {
     height:0em;
     padding:0px 1em;
 }
 
-.card:hover .anakin-image {
+.card-anakin:hover .anakin-image {
     height:18em;
 }
 

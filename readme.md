@@ -57,7 +57,7 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Each page will have different & unique hero styles and card designs it includes static and animated.
+It will showcase different designs of the creator.
 
 Guiding Question:
 - What is the project

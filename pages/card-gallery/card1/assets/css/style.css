@@ -1,14 +1,9 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url('/assets/img/wallpaper_homepage.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .title-left { 
@@ -17,7 +12,7 @@ body {
 
 nav{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .button {
@@ -59,14 +54,14 @@ nav{
 }
 
 header {
-   display: flex;
-   align-items: center;
-   padding: 20px;
-   background-color: whitesmoke;
-   justify-content: space-between;
-   max-height: 100px;
-   opacity: .8;
-   box-shadow: rgb(0, 245, 29) 0px 20px 30px -10px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    max-height: 100px;
+    opacity: 0.8;
 }
 
 .home-logo {
@@ -79,43 +74,73 @@ header {
 
 section {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
+    flex-direction: row-reverse;
+    max-height: fit-content;
 }
 
 .container {
-    border-radius: 50px;
-    font-family: arial;
-    font-size: 24px;
-    margin: 25px;
-    width: 100rem;
-    height: 750px;
-    outline: solid 5px rgba(255, 255, 255, 0.904);
+    border-radius: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 10px;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    max-height: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background-color: rgb(223, 223, 223);
-    gap: 50px;
-    padding: 20px 20px;
-    box-shadow: rgb(0, 0, 0) 0px 30px 60px -12px inset, rgb(241, 217, 2) 0px 18px 36px -18px inset;
+    background-color: transparent;
+    gap: 3px;
+    padding: 15px 20px;
+    flex-direction: row-reverse;
 }
 
-.inner-container-left {
+.inner-container-right {
     width: 50%;
-    height: 70%;
-    margin-left: 20px;
+    height: auto;
+    margin-right: 50px;
     background-color: rgb(255, 255, 255);
+    border-radius: 10%;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     outline: solid black;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgb(0, 0, 0) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.inner-container-right{
+.title-right {
+    font-size: 85px;
+}
+
+
+.title-right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.text, p {
+    width: 70%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.inner-container-left{
     width: 50%;
     height: 100%;
     background-color: transparent;
@@ -126,7 +151,7 @@ section {
     flex-direction: column;
 }
 
-.image-container-right {
+.image-container-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,43 +161,22 @@ section {
     box-shadow: rgba(0, 0, 0, 0.474) 0px 54px 55px, rgba(0, 255, 170, 0.882) 0px -12px 30px, rgb(29, 255, 101) 0px 4px 6px, rgb(15, 219, 8) 0px 12px 13px, rgba(5, 171, 216, 0.878) 0px -3px 5px;
 }
 
-.image-container-right, img {
+.image-container-left, img {
     max-width: 80%;
     height: auto;
     background-color: white;
     border-radius: 15px;
 }
 
-.image-container-right .hero-name {
+.image-container-left:hover > img { /*GROW EFFECT*/
+    transition: 1.5s ease-in-out;
+    transform: scale(1.3);
+    transform: scale(1.1);
+}
+
+.image-container-left .character-name {
     margin-top: 20px;
     font-size: 20px;
     color: black;
     background-color: transparent;
 }
-
-/*Manipulation of Viewports*/
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        height: 50vh;
-    }
-
-     .inner-container-right, .image-container-right  {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1080px) {
-    .container {
-        height: 650px;
-    }
-}
-
-@media (min-width: 1920px) and (max-width: 1920px) {
-    .container {
-        width: 70%;
-    }
-}
-
-
-

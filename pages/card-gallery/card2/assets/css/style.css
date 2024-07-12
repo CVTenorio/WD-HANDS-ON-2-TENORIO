@@ -71,3 +71,140 @@ header {
 .home-logo img {
     max-width: 100px;
 }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column-reverse;
+    max-height: fit-content;
+}
+
+.title-container {
+    display: flex;
+    font-size: 55px;
+    font-weight: 1000;
+    margin-top: 75px;
+    margin-bottom: -15px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container {
+    border-radius: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 25px;
+    margin-top: 10px;
+    display: flex;
+    height:100vh;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    gap: 5px;
+    padding: 10px 10px;
+    flex-direction: row-reverse;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+p{
+    font-size: 18px;
+}
+
+.card-anakin {
+    font-family: Helevetica;
+    height:18em;
+    width:14em;
+    margin-right: 50px;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow:  15px 15px 27px #031081, -15px -15px 27px #05089e;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card-vader {
+    font-family: Helevetica;
+    height:18em;
+    width:14em;
+    margin-right: 50px;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow:  15px 15px 27px #af0505, -15px -15px 27px #b30808;
+}
+
+.vader-image {
+    height: 300px;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/pages/hero-gallery/hero2/assets/img/darthvader-card-profile.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.vader-description {
+    background-color: #e91313;
+    height: 200px;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+}
+
+.anakin-image {
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('/pages/hero-gallery/hero2/assets/img/anakinskywalker-card-profile2.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.anakin-description {
+    background-color: #1c0ed8;
+    height:12em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+}
+
+.card-anakin:hover .anakin-description {
+    height:0em;
+    padding:0px 1em;
+}
+
+.card-anakin:hover .anakin-image {
+    height:18em;
+}

@@ -161,7 +161,7 @@ p{
     position:Absolute;
     top:0px;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image: url('/pages/hero-gallery/hero2/assets/img/darthvader-card-profile.jpg');
+    background-image: url('../img/darthvader-card-profile.jpg');
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -184,7 +184,7 @@ p{
     position:Absolute;
     top:0px;
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image: url('/pages/hero-gallery/hero2/assets/img/anakinskywalker-card-profile2.jpg');
+    background-image: url('../img/anakinskywalker-card-profile2.jpg');
     background-size:cover;
     background-repeat:no-repeat;
 }

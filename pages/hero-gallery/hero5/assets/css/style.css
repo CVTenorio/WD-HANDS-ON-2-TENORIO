@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url("/pages/hero-gallery/hero5/assets/img/hero5-wallpaper.jpeg");
+  background-image: url("../img/hero5-wallpaper.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ section {
 }
 
 .rebel-front-cover {
-  background-image: url("/pages/hero-gallery/hero5/assets/img/rebelprofile1.jpg");
+  background-image: url("../img/rebelprofile1.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }

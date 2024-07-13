@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url('/pages/hero-gallery/hero4/assets/img/battledroid-wallpaper.jpg');
+    background-image: url('../img/battledroid-wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
